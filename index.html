@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RixAiledStudio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400|Roboto:100,200,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fm.revealator.jquery.min.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+<body>
+    <section class="nav revealator-slidedown">
+        <div class="container">       
+            <div class="col-lg-4 col-xs-4">
+                <h1 class="revealator-fade revealator-delay3">RixAiled</h1>
+            </div>
+            <div class="col-lg-8 col-xs-8">
+                <ul>
+                    <li class="revealator-slideright revealator-delay2"><a class="menu-element" href="#home">Home</a></li>
+                    <li class="revealator-slideright revealator-delay3"><a class="menu-element" href="#about-me">About me</a></li>
+                    <li class="revealator-slideright revealator-delay4"><a class="menu-element" href="#gallery">Gallery</a></li>
+                    <li class="revealator-slideright revealator-delay5"><a class="menu-element" href="#contact-me">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>   
+   
+    <header id="home" class="parallax"></header>
+    
+    <section id="about-me" class="about-me">
+        <div class="container">
+            <h2 class="revealator-slideright">About me</h2>
+            <div class="about revealator-delay2 revealator-fade">
+                <div class="col-lg-5">               
+                <img class="about-img" src="assets/img/2.jpg" alt="#">
+                </div>
+                <div class="col-lg-7"> 
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas, lacus ac iaculis tempus, nisl elit rutrum diam, at iaculis nulla massa at dolor. Sed nisl tellus, tincidunt vitae bibendum tincidunt, fermentum eu leo. Quisque fermentum egestas fringilla. In ut ultricies nulla, suscipit vulputate ex. Aliquam erat volutpat. Curabitur molestie vel nibh nec faucibus. Quisque vel ante at nunc suscipit faucibus at eu est. In neque nibh, malesuada id placerat in, sollicitudin eu augue. Nunc non pulvinar neque, id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas, lacus ac iaculis tempus, nisl elit rutrum diam, at iaculis nulla massa at dolor. Sed nisl tellus, tincidunt vitae bibendum tincidunt, fermentum eu leo. Quisque fermentum egestas fringilla. In ut ultricies nulla, suscipit vulputate ex. Aliquam erat volutpat. Curabitur molestie vel nibh nec faucibus. Quisque vel ante at nunc suscipit faucibus at eu est. In neque nibh, malesuada id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas, lacus ac iaculis tempus, nisl elit rutrum diam, at iaculis nulla massa at dolor. Sed nisl tellus, tincidunt vitae bibendum tincidunt, fermentum eu leo. Quisque fermentum egestas fringilla. In ut ultricies nulla, suscipit vulputate ex.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas, lacus ac iaculis tempus, nisl elit rutrum diam, at iaculis nulla massa at dolor. Sed nisl tellus, tincidunt vitae bibendum tincidunt, fermentum eu leo. Quisque fermentum egestas fringilla. In ut ultricies nulla, suscipit vulputate ex.
+                    </p></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="revealator-slideright">Gallery</h2>
+            <div class="imgs">
+                <img src="assets/img/3.jpg" alt="#" class="gal">
+                <img src="assets/img/4.jpg" alt="#" class="gal">
+                <img src="assets/img/5.jpg" alt="#" class="gal">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact-me" class="contact-me revealator-fade">
+        <div class="container">
+            <h2 class="contact">Contact me</h2>
+            <div class="row input">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Phone">
+                </div>
+            </div>
+            <div class="row">
+                <a href="enter.html" class="button">Enter</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="col-lg-4 col-xs-4">             
+                <h1 class="h1">RixAiled</h1>
+            </div>
+            <div class="col-lg-8 col-xs-8">
+                <ul>
+                    <li><a href="https://vk.com/ishandow"><img class="soc" src="assets/img/vk.png" alt=""></a></li>
+                    <li><a href="www.facebook.com"><img class="soc" src="assets/img/fb.png" alt=""></a></li>
+                    <li><a href="www.twitter.com"><img class="soc" src="assets/img/tw.png" alt=""></a></li>
+                </ul>
+            </div>    
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/fm.revealator.jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $("#menu").on("click","a", function (event)     {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+ 
+            //забираем идентификатор бока с атрибута href
+            var id  = $(this).attr('href'),
+ 
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+         
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top - 70}, 1500);
+        });
+    });
+
+    </script>
+</body>
+</html>

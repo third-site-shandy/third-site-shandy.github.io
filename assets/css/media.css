@@ -1,0 +1,113 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    header {
+        background-position: -900px 0;
+    }
+    .parallax {
+        height: 70vh;
+    }
+    .about-img {
+        display: block;
+        margin: 0 auto;
+    }
+    .input {
+        display: block;
+        text-align: center;
+    }
+    input {
+        margin: 15px 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    header {
+        background-position: -900px 0;
+    }
+    .parallax {
+        height: 70vh;
+    }
+    .about-img {
+        display: block;
+        margin: 0 auto;
+    }
+    .input {
+        display: block;
+        text-align: center;
+    }
+    input {
+        margin: 15px 0;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    header {
+        background-position: -550px 0;
+    }
+    .parallax {
+        height: 70vh;
+    }
+    .about-img {
+        display: block;
+        margin: 0 auto;
+    }
+    .input {
+        display: block;
+        text-align: center;
+    }
+    input {
+        margin: 15px 0;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    header {
+        background-position: -700px 0;
+    }
+    .parallax {
+        height: 100vh;
+    }
+    input {
+        margin: 0;
+    }
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    header {
+        background-position: 0 0;
+    }
+    .parallax {
+        height: 100vh;
+    }
+    input {
+        margin: 0;
+    }
+}

@@ -1,0 +1,137 @@
+body, html {
+    height: 100%;    
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url(../img/1.jpg);
+
+    /* Full height */
+    height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+ul {
+    margin: 6.5px 0 0 0;
+    float: right;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 20px; 
+}
+
+.menu-element {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    margin: 3.5px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 180px 0 120px 0;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.about-img {
+    width: 400px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+p {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.about-text {
+    margin-top: 50px;
+}
+
+.gal {
+    display: block;
+    margin: 25px auto;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.contact {
+    margin: 75px 0 95px 0;
+    color: #fff;
+}
+
+.contact-me {
+    background: url(../img/7.jpg) no-repeat center top / cover;
+}
+
+input {
+    width: 190px;
+    height: 35px;
+    padding-left: 10px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: solid #fff;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #fff;
+}
+
+input::-webkit-input-placeholder { 
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+input::-moz-input-placeholder { 
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+.button {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    width: 100px;
+    padding: 7px 0;
+    margin-top: 30px;
+    float: right;
+    text-align: center;
+    margin-right: 120px;
+}
+
+.contact-me {
+    padding: 35px 0;
+}
+
+.soc {
+    width: 25px;
+}
+
+.h1 {
+    margin: 5px 0;
+}
